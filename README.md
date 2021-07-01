@@ -143,5 +143,3 @@ md >> ola
 echo Fim Dos Processor :)
 pause > nul"
 ## Creditos de midias ultilizadas
-![freepik image](https://github.com/xjosematheus29/Multiscript/blob/main/Img/freepik-oferece-3-meses-gratis-de-premium-para-profissionais-durante-a-quarentena.png)
-[Freepik](https://br.freepik.com/)
