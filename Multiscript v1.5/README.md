@@ -4,4 +4,4 @@
 - E novos arquivos de configurações
 
 ## Codigo aberto
-para ver o codigo clique aqui
+Para ver o codigo clique [aqui](https://github.com/xjosematheus29/Multiscript/blob/main/codes/C%C3%B3digo%20do%20script%20v1.5.txt)
