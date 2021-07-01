@@ -1,12 +1,12 @@
 # Faça O Download Do Script
-![Img 214125635.53](https://github.com/xjosematheus29/Multiscript/blob/main/Img/Img2.4215%3B5.523.png)
+![Img2.4215;5.523.png](https://github.com/xjosematheus29/Multiscript/blob/main/Img/Img2.4215%3B5.523.png)
 - Para Fazer O Download [CLIQUE AQUI ✔](https://github.com/xjosematheus29/Multiscript/releases)
 
 # Multiscript
 Tenha tudo que você precisa em apenas um arquivo
 
 ## Código Do Script 1.5
-![img3411542433455545655](https://github.com/xjosematheus29/Multiscript/blob/main/Img/Img2045637786645.png)
+![Img2045637786645.png](https://github.com/xjosematheus29/Multiscript/blob/main/Img/Img2045637786645.png)
 "@echo off
 cls
 echo.
