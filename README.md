@@ -1,3 +1,6 @@
+# Faça O Download Do Script
+- Para Fazer O Download [CLIQUE AQUI](https://github.com/xjosematheus29/Multiscript/releases/tag/1.5)
+
 # Multiscript
 Tenha tudo que você precisa em apenas um arquivo
 
