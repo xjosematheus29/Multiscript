@@ -1,37 +1,139 @@
-## Welcome to GitHub Pages
+# Multiscript
+Tenha tudo que você precisa em apenas um arquivo
 
-You can use the [editor on GitHub](https://github.com/xjosematheus29/Multiscript/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## Código Do Script 1.5
+"@echo off
+cls
+echo.
+echo.
+echo Digite a opcao que voce deseja...
+echo.
+echo.
+echo Opcao [1] Verificacao simples (Administrador)
+echo Opcao [2] Verificacao mais ampla (Administrador)
+echo Opcao [3] Informacoes do windows e do hardware
+echo Opcao [4] Diskpart (Administrador) blocked
+echo Opcao [5] Diskpart + Listdisk (Administrador) blocked
+echo opcao [6] Fechar
+echo opcao [7] N/D
+echo opcao [8] N/D
+echo opcao [9] N/D
+echo opcao [10] N/D
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+set /p opcao=Digite A Opcao Que Voce Dejesa...
 
-### Markdown
+if ¨%opcao%¨ == ¨1¨ goto op1
+if ¨%opcao%¨ == ¨2¨ goto op2
+if ¨%opcao%¨ == ¨3¨ goto op3
+if ¨%opcao%¨ == ¨4¨ goto op4
+if ¨%opcao%¨ == ¨5¨ goto op5
+if ¨%opcao%¨ == ¨6¨ goto op6
+if ¨%opcao%¨ == ¨7¨ goto op7
+if ¨%opcao%¨ == ¨8¨ goto op8
+if ¨%opcao%¨ == ¨9¨ goto op9
+if ¨%opcao%¨ == ¨10¨ goto op10
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+:op1
+cls
+echo.
+echo.
+echo OK Iremos fazer sua verificacao
+timeout /t 10 /nobreak
+sfc/scannow
+pause > nul
+goto fim
 
-```markdown
-Syntax highlighted code block
+:op2
+cls
+echo.
+echo.
+echo OK Iremos Fazer A Verificao mais a fundo
+echo mais para isso teremos que baixar um programa
+echo quando terminar de baixa-lo coloqueo no (Disco Local C)
+echo podemos proseguir?
+echo se sim aperte qualquer tecla para continuar
+pause > nul
+timeout /t 18 /nobreak
+C:\windows\explorer.exe "https://firebasestorage.googleapis.com/v0/b/assistente-de-download43563672.appspot.com/o/JRT.exe?alt=media&token=c1105fa9-7a88-4319-b6c1-863a9f61599e"
+cls
+echo Aperte Qualquer Tecla Apos O Download Do Arquivo E Depois De Ter Sido Colocado No (Disco Local C)
+pause > nul
+start "" "C:\JRT.exe"
+echo quando for finalizado volte ao script e aperte qualquer tecla
+pause > nul
+sfc/scannow
+pause > nul
+goto fim
 
-# Header 1
-## Header 2
-### Header 3
+:op3
+cls
+echo.
+echo.
+echo OK
+pause
+timeout /t 5 /nobreak
+cls
+systeminfo
+pause
+goto fim
 
-- Bulleted
-- List
+:op4
+cls
+echo.
+echo.
+echo Soon the Feature will be Available 
+echo (we are testing)
+pause
+goto fim
 
-1. Numbered
-2. List
+:op5
+cls
+echo.
+echo.
+echo Soon the Feature will be Available 
+echo (we are testing)
+pause
+goto fim
 
-**Bold** and _Italic_ and `Code` text
+:op6
+cls
+echo OK Esperamos que tenha gostado do Scriptando
+pause
+exit
+goto fim
 
-[Link](url) and ![Image](src)
-```
+:op7
+cls
+echo.
+echo.
+echo esta opcao nao existe
+goto fim
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+:op8
+cls
+echo.
+echo.
+echo esta opcao nao existe
+goto fim
 
-### Jekyll Themes
+:op9
+cls
+echo.
+echo.
+echo esta opcao nao existe
+goto fim
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xjosematheus29/Multiscript/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+:op10
+cls
+echo.
+echo.
+echo esta opcao nao existe
+goto fim
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+:fim
+echo.
+echo.
+echo >> historic.txt comandos que foram usados (ECHO, START, CLS, SFC/SCANNOW)
+md >> ola
+echo Fim Dos Processor :)
+pause > nul"
