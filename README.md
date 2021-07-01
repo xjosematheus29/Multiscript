@@ -142,4 +142,6 @@ echo >> historic.txt comandos que foram usados (ECHO, START, CLS, SFC/SCANNOW)
 md >> ola
 echo Fim Dos Processor :)
 pause > nul"
-## Creditos de midias ultilizadas
+# Creditos de midias ultilizadas
+![img342f5fgr6hjnbv](https://github.com/xjosematheus29/Multiscript/blob/main/Img/1841784.png?raw=true)
+## [Freepik](https://br.freepik.com/)
