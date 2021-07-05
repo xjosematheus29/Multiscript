@@ -5,7 +5,7 @@
 # Multiscript
 Tenha tudo que você precisa em apenas um arquivo
 
-## Código Do Script 1.5
+## Código Do Script 1.6
 ![Img2045637786645.png](https://github.com/xjosematheus29/Multiscript/blob/main/Img/Img2045637786645.png?raw=true)
 "@echo off
 cls
@@ -54,16 +54,20 @@ echo.
 echo.
 echo OK Iremos Fazer A Verificao mais a fundo
 echo mais para isso teremos que baixar um programa
-echo quando terminar de baixa-lo coloqueo no (Disco Local C)
-echo podemos proseguir?
+echo quando terminar de baixa-lo colocaremos na pasta (C:\Users\Public)
+echo podemos proseguir
 echo se sim aperte qualquer tecla para continuar
 pause > nul
 timeout /t 18 /nobreak
-C:\windows\explorer.exe "https://firebasestorage.googleapis.com/v0/b/assistente-de-download43563672.appspot.com/o/JRT.exe?alt=media&token=c1105fa9-7a88-4319-b6c1-863a9f61599e"
+cd C:\Users\Public
+timeout /t 5 /nobreak
+wget https://bitbucket.org/itens-para-o-site/cleiton/downloads/JRT.exe
 cls
-echo Aperte Qualquer Tecla Apos O Download Do Arquivo E Depois De Ter Sido Colocado No (Disco Local C)
+echo.
+echo.
+echo Agora aperte qualquer tecla para iniciar o software
 pause > nul
-start "" "C:\JRT.exe"
+start C:\Users\Public\JRT.exe
 echo quando for finalizado volte ao script e aperte qualquer tecla
 pause > nul
 sfc/scannow
