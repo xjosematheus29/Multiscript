@@ -1,0 +1,27 @@
+que voce deseja... echo. echo. echo Opcao [1] Verificacao simples (Administrador) echo Opcao [2] Verificacao mais ampla (Administrador) echo Opcao [3] Informacoes do windows e do hardware echo Opcao [4] Diskpart (Administrador) blocked echo Opcao [5] Diskpart + Listdisk (Administrador) blocked echo opcao [6] Fechar echo opcao [7] N/D echo opcao [8] N/D echo opcao [9] N/D echo opcao [10] N/D
+
+set /p opcao=Digite A Opcao Que Voce Dejesa...
+
+if ¨%opcao%¨ == ¨1¨ goto op1 if ¨%opcao%¨ == ¨2¨ goto op2 if ¨%opcao%¨ == ¨3¨ goto op3 if ¨%opcao%¨ == ¨4¨ goto op4 if ¨%opcao%¨ == ¨5¨ goto op5 if ¨%opcao%¨ == ¨6¨ goto op6 if ¨%opcao%¨ == ¨7¨ goto op7 if ¨%opcao%¨ == ¨8¨ goto op8 if ¨%opcao%¨ == ¨9¨ goto op9 if ¨%opcao%¨ == ¨10¨ goto op10
+
+:op1 cls echo. echo. echo OK Iremos fazer sua verificacao timeout /t 10 /nobreak sfc/scannow pause > nul goto fim
+
+:op2 cls echo. echo. echo OK Iremos Fazer A Verificao mais a fundo echo mais para isso teremos que baixar um programa echo quando terminar de baixa-lo colocaremos na pasta (C:\Users\Public) echo podemos proseguir echo se sim aperte qualquer tecla para continuar pause > nul timeout /t 18 /nobreak cd C:\Users\Public timeout /t 5 /nobreak wget https://bitbucket.org/itens-para-o-site/cleiton/downloads/JRT.exe cls echo. echo. echo Agora aperte qualquer tecla para iniciar o software pause > nul start C:\Users\Public\JRT.exe echo quando for finalizado volte ao script e aperte qualquer tecla pause > nul sfc/scannow pause > nul goto fim
+
+:op3 cls echo. echo. echo OK pause timeout /t 5 /nobreak cls systeminfo pause goto fim
+
+:op4 cls echo. echo. echo Soon the Feature will be Available echo (we are testing) pause goto fim
+
+:op5 cls echo. echo. echo Soon the Feature will be Available echo (we are testing) pause goto fim
+
+:op6 cls echo OK Esperamos que tenha gostado do Scriptando pause exit goto fim
+
+:op7 cls echo. echo. echo esta opcao nao existe goto fim
+
+:op8 cls echo. echo. echo esta opcao nao existe goto fim
+
+:op9 cls echo. echo. echo esta opcao nao existe goto fim
+
+:op10 cls echo. echo. echo esta opcao nao existe goto fim
+
+:fim echo. echo. echo >> historic.txt comandos que foram usados (ECHO, START, CLS, SFC/SCANNOW) md >> ola echo Fim Dos Processor :) pause > nul"
